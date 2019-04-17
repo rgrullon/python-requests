@@ -1,0 +1,38 @@
+Source: python-requests
+Section: python
+Priority: optional
+Maintainer: Kenneth Reitz <me@kennethreitz.org>
+Build-Depends:
+ debhelper (>= 11~),
+ dh-python,
+ python-all,
+ python-setuptools,
+ python3-all,
+ python3-setuptools,
+Build-Depends-Indep:
+ python-mock,
+ python3-mock,
+Standards-Version: 4.2.1
+Homepage: https://pypi.org/project/requests/
+Vcs-Browser: https://git.launchpad.net/~ubuntu-server-dev/ubuntu/+source/python-requests
+Vcs-Git: https://git.launchpad.net/~ubuntu-server-dev/ubuntu/+source/python-requests
+
+Package: python-requests
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+Description: short requests
+ long requests
+ .
+ This package contains the Python 2 module.
+
+Package: python3-requests
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: short requests
+ long requests
+ .
+ This package contains the Python 3 module.
